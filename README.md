@@ -1,5 +1,5 @@
 # rocketchat-docker
-The Rocketchat docker implementatoin with dynamic scaling 
+The Rocketchat docker implementatoin with dynamic scaling.
 
 ## Installation
 
@@ -7,10 +7,10 @@ The Rocketchat docker implementatoin with dynamic scaling
 
 2. Clone this repository:
 ```
-git clone https://github.com/lnxart/rocketchat-docker
-cd /rocketchat-docker
+$ git clone https://github.com/lnxart/rocketchat-docker
+$ cd /rocketchat-docker
 ```
 3. Create and start up containers using docker-compose:
 ```
-docker-compose up -d
+$ docker-compose up -d
 ```
