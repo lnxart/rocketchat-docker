@@ -1,15 +1,16 @@
 # rocketchat-docker
 The Rocketchat docker implementatoin with dynamic scaling 
 
-##Installation
+## Installation
 
-1- Install Docker including docker-compose support.
-2- Clone this repository:
+1. Install Docker including docker-compose support.
+
+2. Clone this repository:
 ```
 git clone https://github.com/lnxart/rocketchat-docker
 cd /rocketchat-docker
 ```
-3- Create and start up containers using docker-compose:
+3. Create and start up containers using docker-compose:
 ```
 docker-compose up -d
 ```
