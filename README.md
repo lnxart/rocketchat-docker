@@ -34,6 +34,7 @@ In production you probably still want to use the default HTTP/HTTPS ports, right
 This service file supports the docker-compose builtin scaling. For example to add 1 additional rocketchat containers you can simply invoke:
 ```
 $ docker-compose scale rocketchat=2
+Starting project_rocketchat_1 ... done
 Creating project_rocketchat_2 ... done
 ```
 The nginx reverse proxy will configure automatically and add the new container to backend servers (for further reading refer to [link](https://github.com/jwilder/nginx-proxy)).
