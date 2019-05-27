@@ -36,8 +36,10 @@ This service file supports the docker-compose builtin scaling. For example to ad
 $ docker-compose scale rocketchat=2
 Creating project_rocketchat_2 ... done
 ```
-The nginx reverse proxy will configure automatically and add the new container to backend servers.
+The nginx reverse proxy will configure automatically and add the new container to backend servers (for further reading refer to [link](https://github.com/jwilder/nginx-proxy).
+
 You can test the functionality by stop the first rocketchat container and then continue to use the application in your web browser.
+
 Also you can scale down the rocketchat containers when your loads decrease simply by:
 ```
 $ docker-compose scale rocketchat=1
