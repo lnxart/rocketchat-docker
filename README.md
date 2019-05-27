@@ -1,5 +1,5 @@
 # rocketchat-docker
-The Rocketchat docker implementatoin with dynamic scaling.
+The Rocketchat docker implementation with dynamic scaling.
 
 ## Getting Started
 
@@ -28,9 +28,9 @@ $ docker-compose up -d
 ## Usage
 ### How to connect to [Rocket.Chat](https://rocket.chat)
 
-This project comes with a dynamic load balancer container which is exposed on port 8080. This load balancer manages the traffic between our application containers, no matter how many we scale up/down.
+This project comes with a dynamic load-balancer container which is exposed on port 8080. This load-balancer manages the traffic between our application containers, no matter how many we scale up/down.
 
-In production you probably still want to use the default HTTP/HTTPS ports, right? To do that simply add your certificates to nginx reverse proxy to terminate your SSL connections.
+In production, you probably still want to use the default HTTP/HTTPS ports, right? To do that simply add your certificates to nginx reverse proxy to terminate your SSL connections.
 
 ### Scaling application dynamically
 
@@ -44,12 +44,12 @@ The nginx reverse proxy will configure automatically and add the new container t
 
 You can test the functionality by stop the first rocketchat container and then continue to use the application in your web browser.
 
-Also you can scale down the rocketchat containers when your loads decrease simply by:
+Also, you can scale down the rocketchat containers when your loads decrease simply by:
 ```
 $ docker-compose scale rocketchat=1
 Stopping and removing project_rocketchat_2 ... done
 ```
-Also there are some other solutions for load balancing the rocketchat like [Traefik](https://docs.traefik.io/) that explained in [this](https://github.com/frdmn/docker-rocketchat) project. It integrates with your existing infrastructure components (Docker, Swarm mode, Kubernetes, Marathon, Consul, Etcd, Rancher, Amazon ECS, ...) and configures itself automatically and dynamically.
+Also, there are some other solutions for load balancing the rocketchat like [Traefik](https://docs.traefik.io/) that explained in [this](https://github.com/frdmn/docker-rocketchat) project. It integrates with your existing infrastructure components (Docker, Swarm mode, Kubernetes, Marathon, Consul, Etcd, Rancher, Amazon ECS, ...) and configures itself automatically and dynamically.
 
 ### MongoDB
 
