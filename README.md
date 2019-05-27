@@ -30,7 +30,7 @@ $ docker-compose up -d
 
 This project comes with a dynamic load-balancer container which is exposed on port 8080. This load-balancer manages the traffic between our application containers, no matter how many we scale up/down.
 
-In production, you probably still want to use the default HTTP/HTTPS ports, right? To do that simply add your certificates to nginx reverse proxy to terminate your SSL connections.
+In production, you probably still want to use the default HTTP/HTTPS ports, right? To do that simply add your certificates to Nginx reverse proxy to terminate your SSL connections.
 
 ### Scaling application dynamically
 
@@ -40,7 +40,7 @@ $ docker-compose scale rocketchat=2
 Starting project_rocketchat_1 ... done
 Creating project_rocketchat_2 ... done
 ```
-The nginx reverse proxy will configure automatically and add the new container to backend servers (for further reading refer to [link](https://github.com/jwilder/nginx-proxy)).
+The Nginx reverse proxy will configure automatically and add the new container to backend servers (for further reading refer to [link](https://github.com/jwilder/nginx-proxy)).
 
 You can test the functionality by stop the first rocketchat container and then continue to use the application in your web browser.
 
