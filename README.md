@@ -22,6 +22,9 @@ $ cd rocketchat-docker
 ```
 $ docker-compose up -d
 ```
+
+(It takes some minutes to prepare the containers.)
+
 ## Usage
 ### How to connect to [Rocket.Chat](https://rocket.chat)
 
