@@ -16,7 +16,9 @@ Install Docker including docker-compose support.
 $ git clone https://github.com/lnxart/rocketchat-docker
 $ cd rocketchat-docker
 ```
-2. Create and start up containers using docker-compose:
+2. Edit the env var VIRTUAL_HOST in `docker-compose.yml` file to your domain. 
+
+3. Create and start up containers using docker-compose:
 ```
 $ docker-compose up -d
 ```
