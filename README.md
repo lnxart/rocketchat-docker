@@ -14,7 +14,7 @@ Install Docker including docker-compose support.
 1. Clone this repository:
 ```
 $ git clone https://github.com/lnxart/rocketchat-docker
-$ cd /rocketchat-docker
+$ cd rocketchat-docker
 ```
 2. Create and start up containers using docker-compose:
 ```
