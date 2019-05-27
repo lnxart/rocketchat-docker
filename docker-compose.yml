@@ -21,7 +21,7 @@ services:
      - /tmp:/tmp
     environment:
      - PORT=3000
-     - ROOT_URL=http://localhost
+     - ROOT_URL=http://yourdomain.tld:8080
      - MONGO_URL=mongodb://mongo:27017/rocketchat
      - MONGO_OPLOG_URL=mongodb://mongo:27017/local
      - VIRTUAL_HOST=yourdomain.tld
