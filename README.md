@@ -23,7 +23,7 @@ $ cd rocketchat-docker
 $ docker-compose up -d
 ```
 ## Usage
-### How to connect to Rocketchat
+### How to connect to [Rocket.Chat](https://rocket.chat)
 
 This project comes with a dynamic load balancer container which is exposed on port 8080. This load balancer manages the traffic between our application containers, no matter how many we scale up/down.
 
@@ -45,6 +45,8 @@ Also you can scale down the rocketchat containers when your loads decrease simpl
 $ docker-compose scale rocketchat=1
 Stopping and removing project_rocketchat_2 ... done
 ```
+Also there are some other solutions for load balancing the rocketchat like [Traefik](https://docs.traefik.io/) that explained in [this](https://github.com/frdmn/docker-rocketchat) project. It integrates with your existing infrastructure components (Docker, Swarm mode, Kubernetes, Marathon, Consul, Etcd, Rancher, Amazon ECS, ...) and configures itself automatically and dynamically.
+
 ### MongoDB
 
 #### Replica set?
