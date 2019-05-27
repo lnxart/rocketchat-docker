@@ -27,7 +27,7 @@ This project comes with a dynamic load balancer container which is exposed on po
 
 In production you probably still want to use the default HTTP/HTTPS ports, right? To do that simply add your certificates to nginx reverse proxy to terminate your SSL connections.
 
-### Scaling in case of performance issues
+### Scaling application dynamically
 
 This service file supports the docker-compose builtin scaling. For example to add 1 additional rocketchat containers you can simply invoke:
 ```
@@ -45,7 +45,7 @@ Stopping and removing project_rocketchat_2 ... done
 
 #### Replica set?
 
-You probably already noticed the mongo-init-replica container. It is necessary to create the replica set in your MongoDB container and executed only once when you spin up the docker-compose.yml file initially. The replica set is necessary to run Rocket.Chat across several instances. (see [Scaling](https://github.com/frdmn/docker-rocketchat#scaling-in-case-of-performance-issues))
+You probably already noticed the mongo-init-replica container. It is necessary to create the replica set in your MongoDB container and executed only once when you spin up the docker-compose.yml file initially. The replica set is necessary to run Rocket.Chat across several instances. (see [Scaling](https://github.com/lnxart/rocketchat-docker#scaling-application-dynamically))
 
 ## Acknowledgments
 
